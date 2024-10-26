@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text"
+    />
+    <style>
+      body {
+        background-color: whitesmoke;
+      }
+      #productTable {
+        width: 100%;
+        overflow: "hidden";
+      }
+      #productTable th,
+      #productTable td {
+        border: 1px solid grey;
+      }
+      .barcode {
+        font-family: "Libre Barcode 128 Text", "Courier New",
+          Courier, monospace;
+        font-weight: normal;
+        font-size: 42px;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lackmann Extension</h1>
+    <table id="productTable">
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Prezzo</th>
+        <th>Scadenza</th>
+        <th>Quantity</th>
+        <th>Barcode</th>
+      </tr>
+    </table>
+    <button id="printButton">Print sheet</button>
+    <button id="resetButton">Reset sheet</button>
+    <button id="syncButton">Sync sheet</button>
+    <script src="./jsBarcode.js"></script>
+    <script src="./sidepanel.js"></script>
+  </body>
+</html>
